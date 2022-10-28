@@ -13,3 +13,13 @@ jobs:
         run : git clone https://${{github.actor}}:${{github.token}}@github.com/ajmeza/workshop_gitAction.git
       - name: print
         run: ls -lha
+  holamundoreusado:
+    runs-on: ubuntu-latest
+    steps:
+      - name: prueba2
+        uses: actions/checkout@v3
+      - name: print
+        run: ls -lha
+
+
+        
