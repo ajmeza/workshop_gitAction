@@ -9,4 +9,7 @@ jobs:
     steps:
       - name: imprimir
         run: echo "hola mundo"
-
+      - name: clone repo
+        run : git clone https://${{github.actor}}:${{github.token}}@github.com/ajmeza/workshop_gitAction.git
+      - name: print
+        run: ls -lha
